@@ -14,3 +14,6 @@ __pycache__/
 figures/*.aux
 figures/*.log
 .Rhistory
+
+# submission drafts (cover email, final PDF) are not part of the archive
+submission/
