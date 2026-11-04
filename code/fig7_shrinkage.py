@@ -36,11 +36,11 @@ for t, (name, mk) in TEST.items():
         r, se = nul[f"{t}_{kind}"].to_numpy(), nul[f"{t}_{kind}_se"].to_numpy()
         a.fill_between(x, np.clip(r - 1.96 * se, 0, 1), np.clip(r + 1.96 * se, 0, 1), color=col, alpha=0.12, lw=0)
         a.plot(x, r, ls=ls, marker=mk, color=col, ms=4, lw=1.1, mfc="white" if kind == "routine" else col,
-               label=f"{name}, {kind}")
+               label=f"{name}, {'usual' if kind == 'routine' else kind}")
 a.axhline(0.05, color=fs.GREY, lw=0.7, ls=":")
 a.text(3.1, 0.085, "5%: what a valid check gives", ha="left", va="bottom", fontsize=7.5, color=fs.GREY)
 a.set_xticks(x, ["none" if m == 0 else f"\u00d7{m:g}" for m in nul.mult])
-a.set_xlabel("Ridge shrinkage (\u00d71 = the strength cross-validation chose)")
+a.set_xlabel("Ridge penalization (\u00d71 = the strength cross-validation chose)")
 a.set_ylabel("False alarms (share of\ncorrect models flagged)")
 a.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{100 * v:.0f}%"))
 a.set_ylim(0, 1.03)
@@ -57,9 +57,9 @@ for i, t in enumerate(TEST):
         x0 = mis[(mis.strength == s) & (mis["mult"] == 0)].iloc[0]
         x1 = mis[(mis.strength == s) & (mis["mult"] == 1)].iloc[0]
         base = j + (i - 0.5) * 3.2 * w
-        bars = [(x0[f"{t}_corrected"], x0[f"{t}_corrected_se"], fs.LIGHT, fs.LIGHT, "no shrinkage (honest)"),
-                (x1[f"{t}_corrected"], x1[f"{t}_corrected_se"], CORRECTED, CORRECTED, "ridge, corrected"),
-                (x1[f"{t}_routine"], x1[f"{t}_routine_se"], "white", ROUTINE, "ridge, routine")]
+        bars = [(x0[f"{t}_corrected"], x0[f"{t}_corrected_se"], fs.LIGHT, fs.LIGHT, "no penalization"),
+                (x1[f"{t}_corrected"], x1[f"{t}_corrected_se"], CORRECTED, CORRECTED, "penalized, corrected"),
+                (x1[f"{t}_routine"], x1[f"{t}_routine_se"], "white", ROUTINE, "penalized, usual check")]
         for k, (r, se, fc, ec, lab) in enumerate(bars):
             b.bar(base + (k - 1) * w, r, w * 0.92, color=fc, edgecolor=ec, lw=0.8,
                   hatch="////" if fc == "white" else None, label=lab if (i == 0 and j == 0) else None)

@@ -82,7 +82,7 @@ ax.set_ylim(0.25, 1.0)
 ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{100 * v:.0f}%"))
 ax.set_ylabel("Actually failed\nor withdrew")
 ax.set_xlabel("New cohort (course, start month), 2014")
-ax.legend(ncol=5, loc="lower center", bbox_to_anchor=(0.5, 1.0), handletextpad=0.2, columnspacing=1.0,
+ax.legend(ncol=5, loc="lower center", bbox_to_anchor=(0.5, 1.0), handletextpad=0.2, columnspacing=1.0, markerscale=1.5,
           fontsize=7.5)
 fig.text(0.02, 0.475, "b", fontweight="bold", fontsize=10, va="top")
 
