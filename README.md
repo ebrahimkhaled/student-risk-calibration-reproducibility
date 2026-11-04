@@ -1,6 +1,6 @@
-# Reproduction materials: When the System Says 70%, Do 70% Really Fail?
+# Reproduction materials: When the System Says 70%, Do 70% of Students Really Fail?
 
-Code, derived data and results for the paper *When the System Says 70%, Do 70% Really Fail?
+Code, derived data and results for the paper *When the System Says 70%, Do 70% of Students Really Fail?
 Checking AI Foundation Models for Student-Risk Predictions* by Ebrahim Khaled Ebrahim (Department
 of Statistics, Faculty of Business, Alexandria University, Egypt; ORCID 0009-0006-7839-8778),
 16th International Conference on ICT in Our Lives, Alexandria University, 19–21 December 2026.

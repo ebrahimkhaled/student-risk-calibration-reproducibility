@@ -55,7 +55,7 @@ COLS = [("Own data,\nlast year", "b", None),
         ("EDGE", "a", "edge.gof ten groups (G = 10)"),
         ("le\nCessie", "a", "le Cessie (external)"),
         ("Deep-\nGOF-1", "a", "DeepGOF-1 external (combined)"),
-        ("Localize", "a", "Localize (any part named)")]
+        ("Locali-\nzation", "a", "Localize (any part named)")]
 
 
 def count(m, src, test):
@@ -85,7 +85,7 @@ for i, m in enumerate(rows):
         ax.add_patch(plt.Rectangle((x, len(rows) - 1 - i), 0.94, 0.9, facecolor=colour(k),
                                    edgecolor="#BBBBBB" if k is None else "none", lw=0.6,
                                    ls=(0, (2, 2)) if k is None else "-"))
-        ax.text(x + 0.47, len(rows) - 1 - i + 0.45, "no check\nexists" if k is None else f"{k}/{NP}",
+        ax.text(x + 0.47, len(rows) - 1 - i + 0.45, "no such\ncheck" if k is None else f"{k}/{NP}",
                 ha="center", va="center", fontsize=7.5 if k is None else 9,
                 color=fs.GREY if k is None else "#222222", fontweight="normal")
 for i, m in enumerate(rows):
@@ -102,8 +102,10 @@ ax.plot([0, 0.94], [len(rows) + 0.9] * 2, color="#222222", lw=0.6)
 ax.set_xlim(-2.6, len(COLS) + 0.4)
 ax.set_ylim(-0.1, len(rows) + 1.4)
 ax.axis("off")
-# key
-for x0, (lab, c) in zip([1.35, 4.05, 5.15], [("alarm in 0\u20132 cohorts", "#CDE8D3"), ("3\u20135", "#FBE3B3"),
+# key, with what a cell counts
+ax.text(0.94, -0.48, "Each cell: courses with an alarm, out of 9", ha="right", va="center", fontsize=7.5,
+        fontweight="bold")
+for x0, (lab, c) in zip([1.35, 4.05, 5.15], [("0\u20132 alarms", "#CDE8D3"), ("3\u20135", "#FBE3B3"),
                                               ("6\u20139", "#F4B9A8")]):
     ax.add_patch(plt.Rectangle((x0, -0.62), 0.28, 0.28, facecolor=c, clip_on=False))
     ax.text(x0 + 0.36, -0.48, lab, va="center", fontsize=7.5)
