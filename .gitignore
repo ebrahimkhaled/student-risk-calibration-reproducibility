@@ -1,0 +1,16 @@
+# raw data: download it, see data/README.md
+data/raw/
+
+# working files that are not part of the archive
+manuscript/
+logs/
+ICT 2026 Paper Plan.md
+ICT 2026 draft paper.pdf
+results/plasmode_smoke/
+
+# build and cache
+__pycache__/
+*.pyc
+figures/*.aux
+figures/*.log
+.Rhistory

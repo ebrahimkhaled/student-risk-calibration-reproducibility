@@ -1,0 +1,547 @@
+model,test,family,statistic,df,p_value,note,pair,feature_set
+lr,Pearson,Global,378.681382471522,357.0,0.206003600937541,"sparse form; comparison only, not counted",AAA_2013J_2014J,stable
+lr,Deviance,Global,374.060737252948,357.0,0.256736162560209,"sparse form; comparison only, not counted",AAA_2013J_2014J,stable
+lr,Osius-Rojek,Standardized,2.55185552295838,,0.0107150941291406,"normal deviate, two-sided",AAA_2013J_2014J,stable
+lr,McCullagh,Standardized,1.03073235500874,,0.151333173818745,"normal deviate, upper tail",AAA_2013J_2014J,stable
+lr,Copas-RSS,Standardized,-1.76657979707632,,0.0772986268846556,"normal deviate, two-sided",AAA_2013J_2014J,stable
+lr,Information-Matrix,Global,17.2571761739575,13.0,0.187812616589051,,AAA_2013J_2014J,stable
+lr,HL,Partition,18.1568776971244,8.0,0.0200806165980201,,AAA_2013J_2014J,stable
+lr,HL-largeN,Partition,18.1568776971244,8.0,0.0201254931781133,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 1.66e-01,AAA_2013J_2014J,stable
+lr,HL-equalwidth,Partition,8.94176425534974,8.0,0.34723247631358,,AAA_2013J_2014J,stable
+lr,Pigeon-Heyse,Partition,18.3076697992972,9.0,0.0317672366505254,,AAA_2013J_2014J,stable
+lr,F-test,Partition,2.67305122459354,9.0,0.0051426418767894,"ANOVA F on deviance residuals; comparison only, not counted",AAA_2013J_2014J,stable
+lr,EF,Partition,17.9995987256446,8.0,0.0212294949163841,,AAA_2013J_2014J,stable
+lr,EF-normal,Partition,1.24305979586722,,0.106922899768256,"normal reference, many groups (G = 15)",AAA_2013J_2014J,stable
+lr,EDGE,Directed,4.84845116460003,2.03937001415486,0.0642675421642189,"S/c ~ chi-square(df), Satterthwaite; G = 15 (auto)",AAA_2013J_2014J,stable
+lr,EDGE.G10,Directed,6.26165917434796,2.07983154150675,0.0293224212644146,"S/c ~ chi-square(df), Satterthwaite",AAA_2013J_2014J,stable
+lr,DEF.poly2,Directed,5.14019130323197,1.12155150357288,0.010365497420323,"S/c ~ chi-square(df), Satterthwaite",AAA_2013J_2014J,stable
+lr,DEF.stukel,Directed,3.80657132789043,1.50537883523573,0.0363308354427551,"S/c ~ chi-square(df), Satterthwaite",AAA_2013J_2014J,stable
+lr,DEF.sym,Directed,0.218792260562192,1.0,0.233737207367734,"S/c ~ chi-square(df), Satterthwaite",AAA_2013J_2014J,stable
+lr,Stukel,Directed,3.73127102548341,2.0,0.154797802642723,,AAA_2013J_2014J,stable
+lr,Tsiatis,Covariate-space,9.89607374209484,9.0,0.358964034510805,,AAA_2013J_2014J,stable
+lr,Xie,Covariate-space,13.7839411101919,10.0,0.18307678978694,,AAA_2013J_2014J,stable
+lr,Pulkstenis-Robinson,Covariate-space,79.7001145723341,93.0,0.835585972499923,"split on categorical: gender, disability, highest_education, imd_band, age_band",AAA_2013J_2014J,stable
+lr,Cubic-LR,Calibration,3.2601925943199,2.0,0.195910707573783,eta^2 and eta^3 added to a logit fit on eta,AAA_2013J_2014J,stable
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.0189825997201442,Cauchy combination of the directed tests,AAA_2013J_2014J,stable
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.0194985800035477,Cauchy combination of the directed tests,AAA_2013J_2014J,stable
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.00375,lambda=69.64 (theory scale); G=10; B=999,AAA_2013J_2014J,stable
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,17.1891354413329,,0.022,lambda=69.64 (theory scale); G=10; B=999,AAA_2013J_2014J,stable
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.00335,lambda=69.64 (theory scale); G=10; B=999,AAA_2013J_2014J,stable
+ridge,EDGE (shrinkage-corrected),Shrinkage,5.07225608591545,,0.045,lambda=69.64 (theory scale); G=10; B=999,AAA_2013J_2014J,stable
+lr,Pearson,Global,1582.53979382682,1516.0,0.11444164091684,"sparse form; comparison only, not counted",BBB_2013B_2014B,stable
+lr,Pearson (grouped),Global,1582.53979382682,1511.0,0.0979259252803117,grouped to 1525 covariate patterns,BBB_2013B_2014B,stable
+lr,Deviance,Global,1791.93799920904,1516.0,1.02800892205544e-06,"sparse form; comparison only, not counted",BBB_2013B_2014B,stable
+lr,Deviance (grouped),Global,1791.93799920904,1511.0,6.61801558924269e-07,grouped to 1525 covariate patterns,BBB_2013B_2014B,stable
+lr,Osius-Rojek,Standardized,4.41600779754506,,1.0054045895489e-05,grouped to 1525 covariate patterns,BBB_2013B_2014B,stable
+lr,McCullagh,Standardized,3.27456224550673,,0.0005291291099878,"normal deviate, upper tail",BBB_2013B_2014B,stable
+lr,McCullagh (grouped),Standardized,3.5937758094618,,0.0001629601495969,grouped to 1525 covariate patterns,BBB_2013B_2014B,stable
+lr,Copas-RSS,Standardized,-1.93148241643611,,0.0534234217438464,"normal deviate, two-sided",BBB_2013B_2014B,stable
+lr,Information-Matrix,Global,41.5438254626453,14.0,0.0001460004364538,,BBB_2013B_2014B,stable
+lr,HL,Partition,9.29030035778841,8.0,0.318401612005773,,BBB_2013B_2014B,stable
+lr,HL-largeN,Partition,9.29030035778841,8.0,0.319471853587808,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 2.90e-02,BBB_2013B_2014B,stable
+lr,HL-equalwidth,Partition,15.0618941570325,8.0,0.0579530814188802,,BBB_2013B_2014B,stable
+lr,Pigeon-Heyse,Partition,9.33508360312353,9.0,0.406935525503611,,BBB_2013B_2014B,stable
+lr,F-test,Partition,3.3280167140455,9.0,0.0004878030766865,"ANOVA F on deviance residuals; comparison only, not counted",BBB_2013B_2014B,stable
+lr,EF,Partition,9.30718223067828,8.0,0.317048836113129,,BBB_2013B_2014B,stable
+lr,EF-normal,Partition,2.40375391506744,,0.0081138465184831,"normal reference, many groups (G = 62)",BBB_2013B_2014B,stable
+lr,EDGE,Directed,5.97147123974451,1.89349348334413,0.0243356027040981,"S/c ~ chi-square(df), Satterthwaite; G = 62 (auto)",BBB_2013B_2014B,stable
+lr,EDGE.G10,Directed,2.13871388654817,2.00417512723726,0.274625778790616,"S/c ~ chi-square(df), Satterthwaite",BBB_2013B_2014B,stable
+lr,DEF.poly2,Directed,2.11369579989098,1.11230929046793,0.0802892528103019,"S/c ~ chi-square(df), Satterthwaite",BBB_2013B_2014B,stable
+lr,DEF.stukel,Directed,1.58217878895974,1.87694921994963,0.34073441495453,"S/c ~ chi-square(df), Satterthwaite",BBB_2013B_2014B,stable
+lr,DEF.sym,Directed,0.0030387446983735,1.0,0.904702174531569,"S/c ~ chi-square(df), Satterthwaite",BBB_2013B_2014B,stable
+lr,Stukel,Directed,11.511986971238,2.0,0.0031637618972597,,BBB_2013B_2014B,stable
+lr,Tsiatis,Covariate-space,17.5694669103588,9.0,0.0405100629611388,,BBB_2013B_2014B,stable
+lr,Xie,Covariate-space,19.0364365682024,10.5,0.0493484576897145,,BBB_2013B_2014B,stable
+lr,Pulkstenis-Robinson,Covariate-space,242.70445941141,264.0,0.822182169644986,"split on categorical: num_of_prev_attempts, gender, disability, highest_education, imd_band, age_band",BBB_2013B_2014B,stable
+lr,Cubic-LR,Calibration,10.8585510140995,2.0,0.0043862724752776,eta^2 and eta^3 added to a logit fit on eta,BBB_2013B_2014B,stable
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.164392259145778,Cauchy combination of the directed tests,BBB_2013B_2014B,stable
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.188878199359834,Cauchy combination of the directed tests,BBB_2013B_2014B,stable
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.10625,lambda=26.85 (theory scale); G=10; B=999,BBB_2013B_2014B,stable
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,10.8428726197068,,0.16,lambda=26.85 (theory scale); G=10; B=999,BBB_2013B_2014B,stable
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.108,lambda=26.85 (theory scale); G=10; B=999,BBB_2013B_2014B,stable
+ridge,EDGE (shrinkage-corrected),Shrinkage,1.91339844944816,,0.291,lambda=26.85 (theory scale); G=10; B=999,BBB_2013B_2014B,stable
+lr,Pearson,Global,1842.96643773656,1821.0,0.354361052460372,"sparse form; comparison only, not counted",BBB_2013J_2014J,stable
+lr,Pearson (grouped),Global,1842.96643773656,1815.0,0.31815453335384,grouped to 1829 covariate patterns,BBB_2013J_2014J,stable
+lr,Deviance,Global,2150.08761345497,1821.0,1.19402002932004e-07,"sparse form; comparison only, not counted",BBB_2013J_2014J,stable
+lr,Deviance (grouped),Global,2150.08761345497,1815.0,7.08569022685761e-08,grouped to 1829 covariate patterns,BBB_2013J_2014J,stable
+lr,Osius-Rojek,Standardized,1.78075633139241,,0.0749522661591211,grouped to 1829 covariate patterns,BBB_2013J_2014J,stable
+lr,McCullagh,Standardized,0.534878556635707,,0.29636691855721,"normal deviate, upper tail",BBB_2013J_2014J,stable
+lr,McCullagh (grouped),Standardized,0.907919900093332,,0.181960271418128,grouped to 1829 covariate patterns,BBB_2013J_2014J,stable
+lr,Copas-RSS,Standardized,-0.613369440315034,,0.539632087816271,"normal deviate, two-sided",BBB_2013J_2014J,stable
+lr,Information-Matrix,Global,23.4661913668165,14.0,0.0530942967775328,,BBB_2013J_2014J,stable
+lr,HL,Partition,9.30314350831936,8.0,0.317372097817351,,BBB_2013J_2014J,stable
+lr,HL-largeN,Partition,9.30314350831936,8.0,0.318654492154844,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 2.66e-02,BBB_2013J_2014J,stable
+lr,HL-equalwidth,Partition,9.30095499348508,8.0,0.317547364689089,,BBB_2013J_2014J,stable
+lr,Pigeon-Heyse,Partition,10.1438839689323,9.0,0.338963134518205,,BBB_2013J_2014J,stable
+lr,F-test,Partition,3.61341174059774,9.0,0.0001769719006768,"ANOVA F on deviance residuals; comparison only, not counted",BBB_2013J_2014J,stable
+lr,EF,Partition,9.34402143332494,8.0,0.3141109103302,,BBB_2013J_2014J,stable
+lr,EF-normal,Partition,-0.668864736634535,,0.74820911673447,"normal reference, many groups (G = 74)",BBB_2013J_2014J,stable
+lr,EDGE,Directed,0.884861047726468,1.98339751325331,0.609940556799324,"S/c ~ chi-square(df), Satterthwaite; G = 74 (auto)",BBB_2013J_2014J,stable
+lr,EDGE.G10,Directed,2.97226841887153,2.05337704103828,0.200154632310997,"S/c ~ chi-square(df), Satterthwaite",BBB_2013J_2014J,stable
+lr,DEF.poly2,Directed,1.81497420357739,1.08404178606932,0.146325619289066,"S/c ~ chi-square(df), Satterthwaite",BBB_2013J_2014J,stable
+lr,DEF.stukel,Directed,1.72753180751739,1.91236332488203,0.318423477990094,"S/c ~ chi-square(df), Satterthwaite",BBB_2013J_2014J,stable
+lr,DEF.sym,Directed,0.0248146607411469,1.0,0.726520589203908,"S/c ~ chi-square(df), Satterthwaite",BBB_2013J_2014J,stable
+lr,Stukel,Directed,0.628378636869996,2.0,0.730380740530889,,BBB_2013J_2014J,stable
+lr,Tsiatis,Covariate-space,9.37586423029889,9.0,0.403326509024854,,BBB_2013J_2014J,stable
+lr,Xie,Covariate-space,25.9849801469662,10.5,0.0049842657422936,,BBB_2013J_2014J,stable
+lr,Pulkstenis-Robinson,Covariate-space,207.019881401912,252.0,0.982432899385422,"split on categorical: num_of_prev_attempts, gender, disability, highest_education, imd_band, age_band",BBB_2013J_2014J,stable
+lr,Cubic-LR,Calibration,0.476121402476565,2.0,0.788154847666496,eta^2 and eta^3 added to a logit fit on eta,BBB_2013J_2014J,stable
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.20344728829038,Cauchy combination of the directed tests,BBB_2013J_2014J,stable
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.224531968498329,Cauchy combination of the directed tests,BBB_2013J_2014J,stable
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.1142,lambda=36.92 (theory scale); G=10; B=999,BBB_2013J_2014J,stable
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,10.0879499326027,,0.206,lambda=36.92 (theory scale); G=10; B=999,BBB_2013J_2014J,stable
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.03315,lambda=36.92 (theory scale); G=10; B=999,BBB_2013J_2014J,stable
+ridge,EDGE (shrinkage-corrected),Shrinkage,3.55580544896397,,0.139,lambda=36.92 (theory scale); G=10; B=999,BBB_2013J_2014J,stable
+lr,Pearson,Global,1202.19053633594,1132.0,0.0721900375315497,"sparse form; comparison only, not counted",DDD_2013B_2014B,stable
+lr,Deviance,Global,1325.97849892675,1132.0,5.25422604015341e-05,"sparse form; comparison only, not counted",DDD_2013B_2014B,stable
+lr,Osius-Rojek,Standardized,2.85328449767255,,0.0043269864674782,"normal deviate, two-sided",DDD_2013B_2014B,stable
+lr,McCullagh,Standardized,2.3638735542677,,0.0090424919853525,"normal deviate, upper tail",DDD_2013B_2014B,stable
+lr,Copas-RSS,Standardized,-0.0593287152810159,,0.952690289905197,"normal deviate, two-sided",DDD_2013B_2014B,stable
+lr,Information-Matrix,Global,14.6323022874933,14.0,0.403742305151354,,DDD_2013B_2014B,stable
+lr,HL,Partition,6.63546352483308,8.0,0.576424254958999,,DDD_2013B_2014B,stable
+lr,HL-largeN,Partition,6.63546352483308,8.0,0.577210587140832,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 0.00e+00,DDD_2013B_2014B,stable
+lr,HL-equalwidth,Partition,8.16130587327261,8.0,0.417874128843554,,DDD_2013B_2014B,stable
+lr,Pigeon-Heyse,Partition,6.54708762250514,9.0,0.684157778593973,,DDD_2013B_2014B,stable
+lr,F-test,Partition,2.4485719021436,9.0,0.0092236633931864,"ANOVA F on deviance residuals; comparison only, not counted",DDD_2013B_2014B,stable
+lr,EF,Partition,6.75460216964845,8.0,0.563325948446897,,DDD_2013B_2014B,stable
+lr,EF-normal,Partition,-0.516113270182089,,0.697112349919404,"normal reference, many groups (G = 46)",DDD_2013B_2014B,stable
+lr,EDGE,Directed,1.5211510424436,1.96209625432472,0.408510268888709,"S/c ~ chi-square(df), Satterthwaite; G = 46 (auto)",DDD_2013B_2014B,stable
+lr,EDGE.G10,Directed,0.595306240784638,2.03682192963602,0.721658598390681,"S/c ~ chi-square(df), Satterthwaite",DDD_2013B_2014B,stable
+lr,DEF.poly2,Directed,0.595290552496566,1.09105283890973,0.406362666984634,"S/c ~ chi-square(df), Satterthwaite",DDD_2013B_2014B,stable
+lr,DEF.stukel,Directed,0.377472735411239,1.98594392275944,0.776949623385247,"S/c ~ chi-square(df), Satterthwaite",DDD_2013B_2014B,stable
+lr,DEF.sym,Directed,0.173010282555639,1.0,0.45925083008514,"S/c ~ chi-square(df), Satterthwaite",DDD_2013B_2014B,stable
+lr,Stukel,Directed,1.07096327287697,2.0,0.585387278392777,,DDD_2013B_2014B,stable
+lr,Tsiatis,Covariate-space,5.28658148986079,9.0,0.808644925622221,,DDD_2013B_2014B,stable
+lr,Xie,Covariate-space,6.06358601642043,10.5,0.841559645364316,,DDD_2013B_2014B,stable
+lr,Pulkstenis-Robinson,Covariate-space,264.719327668216,294.0,0.88921658131352,"split on categorical: num_of_prev_attempts, gender, disability, highest_education, imd_band, age_band",DDD_2013B_2014B,stable
+lr,Cubic-LR,Calibration,3.0454043030461,2.0,0.218121692050919,eta^2 and eta^3 added to a logit fit on eta,DDD_2013B_2014B,stable
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.66559442030676,Cauchy combination of the directed tests,DDD_2013B_2014B,stable
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.642463865766349,Cauchy combination of the directed tests,DDD_2013B_2014B,stable
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.35335,lambda=34.95 (theory scale); G=10; B=999,DDD_2013B_2014B,stable
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,6.05104250905552,,0.56,lambda=34.95 (theory scale); G=10; B=999,DDD_2013B_2014B,stable
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.1406,lambda=34.95 (theory scale); G=10; B=999,DDD_2013B_2014B,stable
+ridge,EDGE (shrinkage-corrected),Shrinkage,0.975112032944759,,0.569,lambda=34.95 (theory scale); G=10; B=999,DDD_2013B_2014B,stable
+lr,Pearson,Global,1670.05324635714,1631.0,0.245082847893665,"sparse form; comparison only, not counted",DDD_2013J_2014J,stable
+lr,Deviance,Global,1930.33810430796,1631.0,3.48097567366202e-07,"sparse form; comparison only, not counted",DDD_2013J_2014J,stable
+lr,Osius-Rojek,Standardized,2.45505733560881,,0.014086211945968,"normal deviate, two-sided",DDD_2013J_2014J,stable
+lr,McCullagh,Standardized,1.6137474665958,,0.0532911067813044,"normal deviate, upper tail",DDD_2013J_2014J,stable
+lr,Copas-RSS,Standardized,-1.58948086731889,,0.111951870214925,"normal deviate, two-sided",DDD_2013J_2014J,stable
+lr,Information-Matrix,Global,24.2611322276863,14.0,0.0426019614807516,,DDD_2013J_2014J,stable
+lr,HL,Partition,13.3208833016446,8.0,0.10127561229612,,DDD_2013J_2014J,stable
+lr,HL-largeN,Partition,13.3208833016446,8.0,0.101924654268513,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 5.69e-02,DDD_2013J_2014J,stable
+lr,HL-equalwidth,Partition,15.1262010440566,8.0,0.0567375157839443,,DDD_2013J_2014J,stable
+lr,Pigeon-Heyse,Partition,12.7169562481898,9.0,0.17583746485489,,DDD_2013J_2014J,stable
+lr,F-test,Partition,4.01732502315051,9.0,4.23526398889903e-05,"ANOVA F on deviance residuals; comparison only, not counted",DDD_2013J_2014J,stable
+lr,EF,Partition,13.2756489780381,8.0,0.102710778790427,,DDD_2013J_2014J,stable
+lr,EF-normal,Partition,-0.509133593225306,,0.694670706821517,"normal reference, many groups (G = 66)",DDD_2013J_2014J,stable
+lr,EDGE,Directed,6.25681537727756,1.97086990585455,0.0283487482750067,"S/c ~ chi-square(df), Satterthwaite; G = 66 (auto)",DDD_2013J_2014J,stable
+lr,EDGE.G10,Directed,3.50593509707032,2.04111468546327,0.142918235323318,"S/c ~ chi-square(df), Satterthwaite",DDD_2013J_2014J,stable
+lr,DEF.poly2,Directed,2.88283487046647,1.08211116606724,0.0597111482684932,"S/c ~ chi-square(df), Satterthwaite",DDD_2013J_2014J,stable
+lr,DEF.stukel,Directed,2.28109970276966,1.9312940416213,0.233577501990294,"S/c ~ chi-square(df), Satterthwaite",DDD_2013J_2014J,stable
+lr,DEF.sym,Directed,0.0585956393316466,1.0,0.596835735232359,"S/c ~ chi-square(df), Satterthwaite",DDD_2013J_2014J,stable
+lr,Stukel,Directed,4.58801809070878,2.0,0.100861292728803,,DDD_2013J_2014J,stable
+lr,Tsiatis,Covariate-space,16.5856027814729,9.0,0.0556149372615041,,DDD_2013J_2014J,stable
+lr,Xie,Covariate-space,18.9969006317959,10.5,0.0499466002706568,,DDD_2013J_2014J,stable
+lr,Pulkstenis-Robinson,Covariate-space,260.160503139579,286.0,0.861410050101847,"split on categorical: num_of_prev_attempts, gender, disability, highest_education, imd_band, age_band",DDD_2013J_2014J,stable
+lr,Cubic-LR,Calibration,4.25455285990961,2.0,0.119161396704263,eta^2 and eta^3 added to a logit fit on eta,DDD_2013J_2014J,stable
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.108560595847935,Cauchy combination of the directed tests,DDD_2013J_2014J,stable
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.107038886241116,Cauchy combination of the directed tests,DDD_2013J_2014J,stable
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.33915,lambda=34.83 (theory scale); G=10; B=999,DDD_2013J_2014J,stable
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,7.44167370501321,,0.445,lambda=34.83 (theory scale); G=10; B=999,DDD_2013J_2014J,stable
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.02125,lambda=34.83 (theory scale); G=10; B=999,DDD_2013J_2014J,stable
+ridge,EDGE (shrinkage-corrected),Shrinkage,5.6883773997742,,0.033,lambda=34.83 (theory scale); G=10; B=999,DDD_2013J_2014J,stable
+lr,Pearson,Global,936.387367646414,914.0,0.296336932714634,"sparse form; comparison only, not counted",EEE_2013J_2014J,stable
+lr,Deviance,Global,966.423285288265,914.0,0.111429376077408,"sparse form; comparison only, not counted",EEE_2013J_2014J,stable
+lr,Osius-Rojek,Standardized,1.08586627209644,,0.277538160811644,"normal deviate, two-sided",EEE_2013J_2014J,stable
+lr,McCullagh,Standardized,0.491900550388707,,0.311394824597148,"normal deviate, upper tail",EEE_2013J_2014J,stable
+lr,Copas-RSS,Standardized,-0.355727522933806,,0.722044631204391,"normal deviate, two-sided",EEE_2013J_2014J,stable
+lr,Information-Matrix,Global,14.231284832785,13.0,0.357759810456265,,EEE_2013J_2014J,stable
+lr,HL,Partition,11.3795971916186,8.0,0.181104171127598,,EEE_2013J_2014J,stable
+lr,HL-largeN,Partition,11.3795971916186,8.0,0.181617938501537,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 6.04e-02,EEE_2013J_2014J,stable
+lr,HL-equalwidth,Partition,6.91868407567153,8.0,0.545430995926661,,EEE_2013J_2014J,stable
+lr,Pigeon-Heyse,Partition,11.8961706637539,9.0,0.219226212393023,,EEE_2013J_2014J,stable
+lr,F-test,Partition,2.80962819194463,9.0,0.0029281387853243,"ANOVA F on deviance residuals; comparison only, not counted",EEE_2013J_2014J,stable
+lr,EF,Partition,11.21908849536,8.0,0.189591684072756,,EEE_2013J_2014J,stable
+lr,EF-normal,Partition,0.807092338709444,,0.209806642854232,"normal reference, many groups (G = 38)",EEE_2013J_2014J,stable
+lr,EDGE,Directed,0.270617605567986,1.78132672865117,0.791884705027147,"S/c ~ chi-square(df), Satterthwaite; G = 38 (auto)",EEE_2013J_2014J,stable
+lr,EDGE.G10,Directed,0.512139750870254,2.03003138047409,0.735175925514879,"S/c ~ chi-square(df), Satterthwaite",EEE_2013J_2014J,stable
+lr,DEF.poly2,Directed,0.495874544182289,1.13619417413282,0.420550611544863,"S/c ~ chi-square(df), Satterthwaite",EEE_2013J_2014J,stable
+lr,DEF.stukel,Directed,0.925541309490556,1.92428922736739,0.489990408713916,"S/c ~ chi-square(df), Satterthwaite",EEE_2013J_2014J,stable
+lr,DEF.sym,Directed,0.179696190700099,1.0,0.350281786979236,"S/c ~ chi-square(df), Satterthwaite",EEE_2013J_2014J,stable
+lr,Stukel,Directed,0.5590945036415,2.0,0.756125998640889,,EEE_2013J_2014J,stable
+lr,Tsiatis,Covariate-space,12.4729038010499,9.0,0.187942447464253,,EEE_2013J_2014J,stable
+lr,Xie,Covariate-space,11.5696272499382,10.0,0.314891394697098,,EEE_2013J_2014J,stable
+lr,Pulkstenis-Robinson,Covariate-space,83.9993071222453,95.0,0.782972310860784,"split on categorical: gender, disability, highest_education, imd_band, age_band",EEE_2013J_2014J,stable
+lr,Cubic-LR,Calibration,0.393490588164923,2.0,0.821399822066066,eta^2 and eta^3 added to a logit fit on eta,EEE_2013J_2014J,stable
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.565335758794494,Cauchy combination of the directed tests,EEE_2013J_2014J,stable
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.433278066749459,Cauchy combination of the directed tests,EEE_2013J_2014J,stable
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.2112,lambda=38.54 (theory scale); G=10; B=999,EEE_2013J_2014J,stable
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,7.86123805948934,,0.361,lambda=38.54 (theory scale); G=10; B=999,EEE_2013J_2014J,stable
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.1603,lambda=38.54 (theory scale); G=10; B=999,EEE_2013J_2014J,stable
+ridge,EDGE (shrinkage-corrected),Shrinkage,0.574030003988158,,0.697,lambda=38.54 (theory scale); G=10; B=999,EEE_2013J_2014J,stable
+lr,Pearson,Global,1421.37533705947,1436.0,0.603098273118953,"sparse form; comparison only, not counted",FFF_2013B_2014B,stable
+lr,Pearson (grouped),Global,1421.37533705947,1435.0,0.595872336132091,grouped to 1449 covariate patterns,FFF_2013B_2014B,stable
+lr,Deviance,Global,1683.91805745019,1436.0,5.51016137984566e-06,"sparse form; comparison only, not counted",FFF_2013B_2014B,stable
+lr,Deviance (grouped),Global,1683.91805745019,1435.0,5.06710651577484e-06,grouped to 1449 covariate patterns,FFF_2013B_2014B,stable
+lr,Osius-Rojek,Standardized,-0.504013472848382,,0.614251909399862,grouped to 1449 covariate patterns,FFF_2013B_2014B,stable
+lr,McCullagh,Standardized,-0.975830664931356,,0.835425807047574,"normal deviate, upper tail",FFF_2013B_2014B,stable
+lr,McCullagh (grouped),Standardized,-0.971899513291282,,0.834449729021656,grouped to 1449 covariate patterns,FFF_2013B_2014B,stable
+lr,Copas-RSS,Standardized,1.30202556583428,,0.192907646157436,"normal deviate, two-sided",FFF_2013B_2014B,stable
+lr,Information-Matrix,Global,21.4121468743368,14.0,0.0915275416393719,,FFF_2013B_2014B,stable
+lr,HL,Partition,8.20519882999882,8.0,0.413686869849258,,FFF_2013B_2014B,stable
+lr,HL-largeN,Partition,8.20519882999882,8.0,0.414748318795211,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 1.19e-02,FFF_2013B_2014B,stable
+lr,HL-equalwidth,Partition,5.62258317727869,8.0,0.689424244648261,,FFF_2013B_2014B,stable
+lr,Pigeon-Heyse,Partition,8.28598017600262,9.0,0.505603079968114,,FFF_2013B_2014B,stable
+lr,F-test,Partition,2.70567158105222,9.0,0.0039872166669183,"ANOVA F on deviance residuals; comparison only, not counted",FFF_2013B_2014B,stable
+lr,EF,Partition,8.20662900315222,8.0,0.413550848621339,,FFF_2013B_2014B,stable
+lr,EF-normal,Partition,0.725717182694359,,0.234006082966823,"normal reference, many groups (G = 58)",FFF_2013B_2014B,stable
+lr,EDGE,Directed,2.74534351751732,1.9782624558808,0.200414135327139,"S/c ~ chi-square(df), Satterthwaite; G = 58 (auto)",FFF_2013B_2014B,stable
+lr,EDGE.G10,Directed,2.45606881915701,2.06205723582551,0.268351902330436,"S/c ~ chi-square(df), Satterthwaite",FFF_2013B_2014B,stable
+lr,DEF.poly2,Directed,1.78833028275749,1.09445328231057,0.155719722949588,"S/c ~ chi-square(df), Satterthwaite",FFF_2013B_2014B,stable
+lr,DEF.stukel,Directed,1.85018962735678,1.97845393591531,0.321384832583786,"S/c ~ chi-square(df), Satterthwaite",FFF_2013B_2014B,stable
+lr,DEF.sym,Directed,0.0587523227212323,1.0,0.610497260989412,"S/c ~ chi-square(df), Satterthwaite",FFF_2013B_2014B,stable
+lr,Stukel,Directed,2.78041554115005,2.0,0.249023559488145,,FFF_2013B_2014B,stable
+lr,Tsiatis,Covariate-space,10.0212186664068,9.0,0.348770171939281,,FFF_2013B_2014B,stable
+lr,Xie,Covariate-space,8.11989039644771,10.5,0.661234156183801,,FFF_2013B_2014B,stable
+lr,Pulkstenis-Robinson,Covariate-space,216.439915648145,250.0,0.938663284043868,"split on categorical: num_of_prev_attempts, gender, disability, highest_education, imd_band, age_band",FFF_2013B_2014B,stable
+lr,Cubic-LR,Calibration,2.95325467243651,2.0,0.228406729901042,eta^2 and eta^3 added to a logit fit on eta,FFF_2013B_2014B,stable
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.230234395759908,Cauchy combination of the directed tests,FFF_2013B_2014B,stable
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.263416791678745,Cauchy combination of the directed tests,FFF_2013B_2014B,stable
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.21725,lambda=33.48 (theory scale); G=10; B=999,FFF_2013B_2014B,stable
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,9.47811150125497,,0.251,lambda=33.48 (theory scale); G=10; B=999,FFF_2013B_2014B,stable
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.161,lambda=33.48 (theory scale); G=10; B=999,FFF_2013B_2014B,stable
+ridge,EDGE (shrinkage-corrected),Shrinkage,2.15579526313637,,0.303,lambda=33.48 (theory scale); G=10; B=999,FFF_2013B_2014B,stable
+lr,Pearson,Global,1999.89070140791,1968.0,0.302853372332921,"sparse form; comparison only, not counted",FFF_2013J_2014J,stable
+lr,Deviance,Global,2257.8905299532,1968.0,4.88940630782985e-06,"sparse form; comparison only, not counted",FFF_2013J_2014J,stable
+lr,Osius-Rojek,Standardized,1.05632247395804,,0.290820911706218,"normal deviate, two-sided",FFF_2013J_2014J,stable
+lr,McCullagh,Standardized,0.63357073756329,,0.26318050146487,"normal deviate, upper tail",FFF_2013J_2014J,stable
+lr,Copas-RSS,Standardized,-1.22626660505653,,0.220098364008554,"normal deviate, two-sided",FFF_2013J_2014J,stable
+lr,Information-Matrix,Global,12.4982236777961,14.0,0.56635713161476,,FFF_2013J_2014J,stable
+lr,HL,Partition,6.13169387169829,8.0,0.632482936558791,,FFF_2013J_2014J,stable
+lr,HL-largeN,Partition,6.13169387169829,8.0,0.633757740429754,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 0.00e+00,FFF_2013J_2014J,stable
+lr,HL-equalwidth,Partition,6.69851307303084,8.0,0.569482376033316,,FFF_2013J_2014J,stable
+lr,Pigeon-Heyse,Partition,5.92041021819309,9.0,0.74785681648501,,FFF_2013J_2014J,stable
+lr,F-test,Partition,3.94554411763079,9.0,5.36882689974998e-05,"ANOVA F on deviance residuals; comparison only, not counted",FFF_2013J_2014J,stable
+lr,EF,Partition,6.02209483882059,8.0,0.64475682171851,,FFF_2013J_2014J,stable
+lr,EF-normal,Partition,-0.376439648496574,,0.646704962634023,"normal reference, many groups (G = 80)",FFF_2013J_2014J,stable
+lr,EDGE,Directed,1.29365339094482,1.98552748814182,0.477635882947872,"S/c ~ chi-square(df), Satterthwaite; G = 80 (auto)",FFF_2013J_2014J,stable
+lr,EDGE.G10,Directed,1.87217278267453,2.06353753234894,0.371619527433103,"S/c ~ chi-square(df), Satterthwaite",FFF_2013J_2014J,stable
+lr,DEF.poly2,Directed,0.287009485248815,1.09133014846284,0.594515248970498,"S/c ~ chi-square(df), Satterthwaite",FFF_2013J_2014J,stable
+lr,DEF.stukel,Directed,1.86821975344029,1.979828992733,0.318303130096268,"S/c ~ chi-square(df), Satterthwaite",FFF_2013J_2014J,stable
+lr,DEF.sym,Directed,0.471949341629404,1.0,0.143638684390194,"S/c ~ chi-square(df), Satterthwaite",FFF_2013J_2014J,stable
+lr,Stukel,Directed,1.97094776658533,2.0,0.373262302250328,,FFF_2013J_2014J,stable
+lr,Tsiatis,Covariate-space,8.41916880961099,9.0,0.492517087203231,,FFF_2013J_2014J,stable
+lr,Xie,Covariate-space,8.52654020465591,10.5,0.622702470457733,,FFF_2013J_2014J,stable
+lr,Pulkstenis-Robinson,Covariate-space,188.967361227526,260.0,0.999692345608094,"split on categorical: num_of_prev_attempts, gender, disability, highest_education, imd_band, age_band",FFF_2013J_2014J,stable
+lr,Cubic-LR,Calibration,1.1575997038135,2.0,0.560570730910138,eta^2 and eta^3 added to a logit fit on eta,FFF_2013J_2014J,stable
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.420737960603586,Cauchy combination of the directed tests,FFF_2013J_2014J,stable
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.478236760889925,Cauchy combination of the directed tests,FFF_2013J_2014J,stable
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.5975,lambda=32.9 (theory scale); G=10; B=999,FFF_2013J_2014J,stable
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,5.64651339864261,,0.659,lambda=32.9 (theory scale); G=10; B=999,FFF_2013J_2014J,stable
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.1538,lambda=32.9 (theory scale); G=10; B=999,FFF_2013J_2014J,stable
+ridge,EDGE (shrinkage-corrected),Shrinkage,2.81790259966603,,0.214,lambda=32.9 (theory scale); G=10; B=999,FFF_2013J_2014J,stable
+lr,Pearson,Global,923.238619869815,911.0,0.381688971308169,"sparse form; comparison only, not counted",GGG_2013J_2014J,stable
+lr,Pearson (grouped),Global,916.908124347149,905.0,0.384250515382441,grouped to 918 covariate patterns,GGG_2013J_2014J,stable
+lr,Deviance,Global,1132.4549376636,911.0,6.68542547088653e-07,"sparse form; comparison only, not counted",GGG_2013J_2014J,stable
+lr,Deviance (grouped),Global,1124.13717149688,905.0,7.90081086535863e-07,grouped to 918 covariate patterns,GGG_2013J_2014J,stable
+lr,Osius-Rojek,Standardized,2.23519440496868,,0.0254045886544247,grouped to 918 covariate patterns,GGG_2013J_2014J,stable
+lr,McCullagh,Standardized,-0.163988053900876,,0.565129725947384,"normal deviate, upper tail",GGG_2013J_2014J,stable
+lr,McCullagh (grouped),Standardized,-0.188858894432938,,0.574898294386394,grouped to 918 covariate patterns,GGG_2013J_2014J,stable
+lr,Copas-RSS,Standardized,0.576894038121885,,0.564011038270757,"normal deviate, two-sided",GGG_2013J_2014J,stable
+lr,Information-Matrix,Global,10.9382772348866,13.0,0.615988429060411,,GGG_2013J_2014J,stable
+lr,HL,Partition,8.06091253341002,8.0,0.427542742403119,,GGG_2013J_2014J,stable
+lr,HL-largeN,Partition,8.06091253341002,8.0,0.428220042391694,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 8.12e-03,GGG_2013J_2014J,stable
+lr,HL-equalwidth,Partition,14.4301470670294,6.0,0.0251833946747639,,GGG_2013J_2014J,stable
+lr,Pigeon-Heyse,Partition,7.29513317762254,9.0,0.606421388162457,,GGG_2013J_2014J,stable
+lr,F-test,Partition,1.42047974757467,9.0,0.174524452727588,"ANOVA F on deviance residuals; comparison only, not counted",GGG_2013J_2014J,stable
+lr,EF,Partition,8.1849890760908,8.0,0.415611775130705,,GGG_2013J_2014J,stable
+lr,EF-normal,Partition,0.899114284689805,,0.184295895054285,"normal reference, many groups (G = 37)",GGG_2013J_2014J,stable
+lr,EDGE,Directed,1.33987834826059,1.99992351225396,0.483752297297398,"S/c ~ chi-square(df), Satterthwaite; G = 37 (auto)",GGG_2013J_2014J,stable
+lr,EDGE.G10,Directed,1.67141013995423,2.05786318337092,0.413676499368389,"S/c ~ chi-square(df), Satterthwaite",GGG_2013J_2014J,stable
+lr,DEF.poly2,Directed,1.53905690096749,1.07025408822927,0.191965125274515,"S/c ~ chi-square(df), Satterthwaite",GGG_2013J_2014J,stable
+lr,DEF.stukel,Directed,1.75571793001227,1.79065696357802,0.256330148524633,"S/c ~ chi-square(df), Satterthwaite",GGG_2013J_2014J,stable
+lr,DEF.sym,Directed,0.516364100985716,1.0,0.0697902305287559,"S/c ~ chi-square(df), Satterthwaite",GGG_2013J_2014J,stable
+lr,Stukel,Directed,0.602717229868647,2.0,0.739812417387881,,GGG_2013J_2014J,stable
+lr,Tsiatis,Covariate-space,6.42636292857831,9.0,0.696603214916254,,GGG_2013J_2014J,stable
+lr,Xie,Covariate-space,25.63796809271,10.0,0.004258853621526,,GGG_2013J_2014J,stable
+lr,Pulkstenis-Robinson,Covariate-space,93.8588319191553,103.0,0.729053748722511,"split on categorical: gender, disability, highest_education, imd_band, age_band",GGG_2013J_2014J,stable
+lr,Cubic-LR,Calibration,0.969649841016917,2.0,0.615805002153419,eta^2 and eta^3 added to a logit fit on eta,GGG_2013J_2014J,stable
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.267258403402837,Cauchy combination of the directed tests,GGG_2013J_2014J,stable
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.297078770699153,Cauchy combination of the directed tests,GGG_2013J_2014J,stable
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.29145,lambda=64.37 (theory scale); G=10; B=999,GGG_2013J_2014J,stable
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,6.05676968774025,,0.625,lambda=64.37 (theory scale); G=10; B=999,GGG_2013J_2014J,stable
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.08725,lambda=64.37 (theory scale); G=10; B=999,GGG_2013J_2014J,stable
+ridge,EDGE (shrinkage-corrected),Shrinkage,0.965032018160997,,0.614,lambda=64.37 (theory scale); G=10; B=999,GGG_2013J_2014J,stable
+lr,Pearson,Global,394.227836643359,347.0,0.0407236913696452,"sparse form; comparison only, not counted",AAA_2013J_2014J,full
+lr,Deviance,Global,335.696254454601,347.0,0.65853015307572,"sparse form; comparison only, not counted",AAA_2013J_2014J,full
+lr,Osius-Rojek,Standardized,2.8209035200625,,0.0047888603110308,"normal deviate, two-sided",AAA_2013J_2014J,full
+lr,McCullagh,Standardized,1.42300868420136,,0.0773668189036326,"normal deviate, upper tail",AAA_2013J_2014J,full
+lr,Copas-RSS,Standardized,-1.36598753220067,,0.171942876719067,"normal deviate, two-sided",AAA_2013J_2014J,full
+lr,Information-Matrix,Global,18.001333457114,23.0,0.757416996453026,,AAA_2013J_2014J,full
+lr,HL,Partition,6.41385421393799,8.0,0.600977977054213,,AAA_2013J_2014J,full
+lr,HL-largeN,Partition,6.41385421393799,8.0,0.601225686440264,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 0.00e+00,AAA_2013J_2014J,full
+lr,HL-equalwidth,Partition,12.5243834091657,8.0,0.129295722749787,,AAA_2013J_2014J,full
+lr,Pigeon-Heyse,Partition,6.43300780905029,9.0,0.695919801560934,,AAA_2013J_2014J,full
+lr,F-test,Partition,1.33279678389215,9.0,0.218213784202044,"ANOVA F on deviance residuals; comparison only, not counted",AAA_2013J_2014J,full
+lr,EF,Partition,5.6657638932189,8.0,0.684613638241444,,AAA_2013J_2014J,full
+lr,EF-normal,Partition,1.70554492495527,,0.0440464205344038,"normal reference, many groups (G = 15)",AAA_2013J_2014J,full
+lr,EDGE,Directed,2.53867021889658,1.98709709824306,0.191711745754498,"S/c ~ chi-square(df), Satterthwaite; G = 15 (auto)",AAA_2013J_2014J,full
+lr,EDGE.G10,Directed,1.54549565347828,2.07146533549276,0.398018609675621,"S/c ~ chi-square(df), Satterthwaite",AAA_2013J_2014J,full
+lr,DEF.poly2,Directed,0.774464607952419,1.14584359659815,0.317586834669941,"S/c ~ chi-square(df), Satterthwaite",AAA_2013J_2014J,full
+lr,DEF.stukel,Directed,1.72545825416936,1.69700481816562,0.203091598917812,"S/c ~ chi-square(df), Satterthwaite",AAA_2013J_2014J,full
+lr,DEF.sym,Directed,0.686511477841425,1.0,0.0824651944118367,"S/c ~ chi-square(df), Satterthwaite",AAA_2013J_2014J,full
+lr,Stukel,Directed,3.71175833868429,2.0,0.15631545449082,,AAA_2013J_2014J,full
+lr,Tsiatis,Covariate-space,12.682193718743,9.0,0.177521756318394,,AAA_2013J_2014J,full
+lr,Xie,Covariate-space,17.1942257827094,15.0,0.307386810525014,,AAA_2013J_2014J,full
+lr,Pulkstenis-Robinson,Covariate-space,102.100686604339,128.0,0.955479883060047,"split on categorical: assess_submitted, gender, disability, highest_education, imd_band, age_band",AAA_2013J_2014J,full
+lr,Cubic-LR,Calibration,2.50534154102246,2.0,0.285740629209858,eta^2 and eta^3 added to a logit fit on eta,AAA_2013J_2014J,full
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.290084672304848,Cauchy combination of the directed tests,AAA_2013J_2014J,full
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.37406614981834,Cauchy combination of the directed tests,AAA_2013J_2014J,full
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.09985,lambda=67.16 (theory scale); G=10; B=999,AAA_2013J_2014J,full
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,9.29807145433473,,0.184,lambda=67.16 (theory scale); G=10; B=999,AAA_2013J_2014J,full
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.0141,lambda=67.16 (theory scale); G=10; B=999,AAA_2013J_2014J,full
+ridge,EDGE (shrinkage-corrected),Shrinkage,3.93535207562328,,0.055,lambda=67.16 (theory scale); G=10; B=999,AAA_2013J_2014J,full
+lr,Pearson,Global,1555.68930366298,1505.0,0.177258925116428,"sparse form; comparison only, not counted",BBB_2013B_2014B,full
+lr,Pearson (grouped),Global,1555.68930366298,1501.0,0.159039585162407,grouped to 1526 covariate patterns,BBB_2013B_2014B,full
+lr,Deviance,Global,1592.11879867514,1505.0,0.0581646019871719,"sparse form; comparison only, not counted",BBB_2013B_2014B,full
+lr,Deviance (grouped),Global,1592.11879867514,1501.0,0.0502288151925534,grouped to 1526 covariate patterns,BBB_2013B_2014B,full
+lr,Osius-Rojek,Standardized,1.73114223825857,,0.0834263984948853,grouped to 1526 covariate patterns,BBB_2013B_2014B,full
+lr,McCullagh,Standardized,0.813844936066026,,0.207866894339277,"normal deviate, upper tail",BBB_2013B_2014B,full
+lr,McCullagh (grouped),Standardized,0.944380256748992,,0.172487683418264,grouped to 1526 covariate patterns,BBB_2013B_2014B,full
+lr,Copas-RSS,Standardized,-0.908782053490694,,0.363465181566471,"normal deviate, two-sided",BBB_2013B_2014B,full
+lr,Information-Matrix,Global,31.9670229448276,25.0,0.158968572006733,,BBB_2013B_2014B,full
+lr,HL,Partition,13.539689022578,8.0,0.0945806901244888,,BBB_2013B_2014B,full
+lr,HL-largeN,Partition,13.539689022578,8.0,0.0951582329065739,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 6.02e-02,BBB_2013B_2014B,full
+lr,HL-equalwidth,Partition,15.8088160994137,8.0,0.0451997318818677,,BBB_2013B_2014B,full
+lr,Pigeon-Heyse,Partition,13.6307910062453,9.0,0.136078133547726,,BBB_2013B_2014B,full
+lr,F-test,Partition,4.90089554837026,9.0,1.68649776332068e-06,"ANOVA F on deviance residuals; comparison only, not counted",BBB_2013B_2014B,full
+lr,EF,Partition,13.6040962571319,8.0,0.0926862091716041,,BBB_2013B_2014B,full
+lr,EF-normal,Partition,0.455784053259238,,0.324272636231033,"normal reference, many groups (G = 62)",BBB_2013B_2014B,full
+lr,EDGE,Directed,1.36872229940615,1.67049034516287,0.32707419904454,"S/c ~ chi-square(df), Satterthwaite; G = 62 (auto)",BBB_2013B_2014B,full
+lr,EDGE.G10,Directed,3.55814691879642,1.85846372167992,0.0821249988100082,"S/c ~ chi-square(df), Satterthwaite",BBB_2013B_2014B,full
+lr,DEF.poly2,Directed,3.13074914919313,1.15252801502961,0.0120603060890261,"S/c ~ chi-square(df), Satterthwaite",BBB_2013B_2014B,full
+lr,DEF.stukel,Directed,2.19096013231556,1.8107197010163,0.194377262987537,"S/c ~ chi-square(df), Satterthwaite",BBB_2013B_2014B,full
+lr,DEF.sym,Directed,0.0081559869328178,1.0,0.854384520084347,"S/c ~ chi-square(df), Satterthwaite",BBB_2013B_2014B,full
+lr,Stukel,Directed,3.05487639336582,2.0,0.217091100258014,,BBB_2013B_2014B,full
+lr,Tsiatis,Covariate-space,11.2723339139909,9.0,0.257502790359154,,BBB_2013B_2014B,full
+lr,Xie,Covariate-space,25.2493717938862,16.0,0.0655481823547463,,BBB_2013B_2014B,full
+lr,Pulkstenis-Robinson,Covariate-space,352.088930602972,385.0,0.884427876113227,"split on categorical: num_of_prev_attempts, assess_submitted, gender, disability, highest_education, imd_band, age_band",BBB_2013B_2014B,full
+lr,Cubic-LR,Calibration,1.14555875358701,2.0,0.563955812720527,eta^2 and eta^3 added to a logit fit on eta,BBB_2013B_2014B,full
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.0301300555936544,Cauchy combination of the directed tests,BBB_2013B_2014B,full
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.0362873772306361,Cauchy combination of the directed tests,BBB_2013B_2014B,full
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.01405,lambda=11.71 (theory scale); G=10; B=999,BBB_2013B_2014B,full
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,15.413961213893,,0.03,lambda=11.71 (theory scale); G=10; B=999,BBB_2013B_2014B,full
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.0159,lambda=11.71 (theory scale); G=10; B=999,BBB_2013B_2014B,full
+ridge,EDGE (shrinkage-corrected),Shrinkage,2.81482769956576,,0.118,lambda=11.71 (theory scale); G=10; B=999,BBB_2013B_2014B,full
+lr,Pearson,Global,1809.52889698775,1810.0,0.49870334675508,"sparse form; comparison only, not counted",BBB_2013J_2014J,full
+lr,Pearson (grouped),Global,1809.52889698775,1805.0,0.465571148158647,grouped to 1830 covariate patterns,BBB_2013J_2014J,full
+lr,Deviance,Global,2007.59993065337,1810.0,0.0007293713191904,"sparse form; comparison only, not counted",BBB_2013J_2014J,full
+lr,Deviance (grouped),Global,2007.59993065337,1805.0,0.0005483143513745,grouped to 1830 covariate patterns,BBB_2013J_2014J,full
+lr,Osius-Rojek,Standardized,0.227441708579911,,0.820080291212393,grouped to 1830 covariate patterns,BBB_2013J_2014J,full
+lr,McCullagh,Standardized,-1.3232059183673,,0.907116545812205,"normal deviate, upper tail",BBB_2013J_2014J,full
+lr,McCullagh (grouped),Standardized,-1.03451954290392,,0.849553327287779,grouped to 1830 covariate patterns,BBB_2013J_2014J,full
+lr,Copas-RSS,Standardized,1.81651285310919,,0.0692917381101522,"normal deviate, two-sided",BBB_2013J_2014J,full
+lr,Information-Matrix,Global,32.1881123740159,25.0,0.15264098338854,,BBB_2013J_2014J,full
+lr,HL,Partition,7.03626399948314,8.0,0.532725161130163,,BBB_2013J_2014J,full
+lr,HL-largeN,Partition,7.03626399948314,8.0,0.534027665142469,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 0.00e+00,BBB_2013J_2014J,full
+lr,HL-equalwidth,Partition,9.06429134427105,8.0,0.336901496572133,,BBB_2013J_2014J,full
+lr,Pigeon-Heyse,Partition,7.19136042434801,9.0,0.617203568572566,,BBB_2013J_2014J,full
+lr,F-test,Partition,3.72182309129391,9.0,0.0001205033044919,"ANOVA F on deviance residuals; comparison only, not counted",BBB_2013J_2014J,full
+lr,EF,Partition,7.08208133909237,8.0,0.527803200806618,,BBB_2013J_2014J,full
+lr,EF-normal,Partition,-0.887819424872921,,0.812681053834773,"normal reference, many groups (G = 74)",BBB_2013J_2014J,full
+lr,EDGE,Directed,3.269881636947,1.86587918239964,0.112697724059037,"S/c ~ chi-square(df), Satterthwaite; G = 74 (auto)",BBB_2013J_2014J,full
+lr,EDGE.G10,Directed,1.65810686065385,1.93414576530449,0.334265104819805,"S/c ~ chi-square(df), Satterthwaite",BBB_2013J_2014J,full
+lr,DEF.poly2,Directed,0.375575808860067,1.11111785608053,0.452487402455088,"S/c ~ chi-square(df), Satterthwaite",BBB_2013J_2014J,full
+lr,DEF.stukel,Directed,1.67720814854237,1.74787282239507,0.286460234365526,"S/c ~ chi-square(df), Satterthwaite",BBB_2013J_2014J,full
+lr,DEF.sym,Directed,0.131094819127414,1.0,0.392417728730106,"S/c ~ chi-square(df), Satterthwaite",BBB_2013J_2014J,full
+lr,Stukel,Directed,2.83669358686016,2.0,0.242113950593232,,BBB_2013J_2014J,full
+lr,Tsiatis,Covariate-space,7.31629604093679,9.0,0.60422505431041,,BBB_2013J_2014J,full
+lr,Xie,Covariate-space,37.1499879391768,16.0,0.0019974722323555,,BBB_2013J_2014J,full
+lr,Pulkstenis-Robinson,Covariate-space,319.770050312759,361.0,0.94202552003133,"split on categorical: num_of_prev_attempts, assess_submitted, gender, disability, highest_education, imd_band, age_band",BBB_2013J_2014J,full
+lr,Cubic-LR,Calibration,2.70149466020189,2.0,0.259046594970842,eta^2 and eta^3 added to a logit fit on eta,BBB_2013J_2014J,full
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.350935731359226,Cauchy combination of the directed tests,BBB_2013J_2014J,full
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.39071726447189,Cauchy combination of the directed tests,BBB_2013J_2014J,full
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.64345,lambda=28.02 (theory scale); G=10; B=999,BBB_2013J_2014J,full
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,4.51144438935191,,0.758,lambda=28.02 (theory scale); G=10; B=999,BBB_2013J_2014J,full
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.23545,lambda=28.02 (theory scale); G=10; B=999,BBB_2013J_2014J,full
+ridge,EDGE (shrinkage-corrected),Shrinkage,1.25291379700921,,0.396,lambda=28.02 (theory scale); G=10; B=999,BBB_2013J_2014J,full
+lr,Pearson,Global,1448.93083422355,1122.0,1.1491820759336002e-10,"sparse form; comparison only, not counted",DDD_2013B_2014B,full
+lr,Deviance,Global,1088.09330111293,1122.0,0.760838152668886,"sparse form; comparison only, not counted",DDD_2013B_2014B,full
+lr,Osius-Rojek,Standardized,2.53739028026534,,0.0111682370255741,"normal deviate, two-sided",DDD_2013B_2014B,full
+lr,McCullagh,Standardized,,,,Not run: singular information matrix,DDD_2013B_2014B,full
+lr,Copas-RSS,Standardized,,,,Not run: singular information matrix,DDD_2013B_2014B,full
+lr,Information-Matrix,Global,,,,Not run: singular auxiliary matrix,DDD_2013B_2014B,full
+lr,HL,Partition,15.9021847916671,8.0,0.043801738599317,,DDD_2013B_2014B,full
+lr,HL-largeN,Partition,15.9021847916671,8.0,0.044054418344588,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 8.30e-02,DDD_2013B_2014B,full
+lr,HL-equalwidth,Partition,9.91634462979244,8.0,0.270946614954444,,DDD_2013B_2014B,full
+lr,Pigeon-Heyse,Partition,17.201122376988,9.0,0.045658008922259,,DDD_2013B_2014B,full
+lr,F-test,Partition,3.91414952112518,9.0,6.46558206593836e-05,"ANOVA F on deviance residuals; comparison only, not counted",DDD_2013B_2014B,full
+lr,EF,Partition,12.3000096505273,8.0,0.138311757281159,,DDD_2013B_2014B,full
+lr,EF-normal,Partition,,,,"error: Lapack routine dgesv: system is exactly singular: U[14,14] = 0",DDD_2013B_2014B,full
+lr,EDGE,Directed,,,,"error: Lapack routine dgesv: system is exactly singular: U[14,14] = 0",DDD_2013B_2014B,full
+lr,EDGE.G10,Directed,,,,"error: Lapack routine dgesv: system is exactly singular: U[14,14] = 0",DDD_2013B_2014B,full
+lr,DEF.poly2,Directed,,,,"error: Lapack routine dgesv: system is exactly singular: U[14,14] = 0",DDD_2013B_2014B,full
+lr,DEF.stukel,Directed,,,,"error: Lapack routine dgesv: system is exactly singular: U[14,14] = 0",DDD_2013B_2014B,full
+lr,DEF.sym,Directed,,,,"error: Lapack routine dgesv: system is exactly singular: U[14,14] = 0",DDD_2013B_2014B,full
+lr,Stukel,Directed,7.93324351449706,2.0,0.0189372999919686,,DDD_2013B_2014B,full
+lr,Tsiatis,Covariate-space,17.9786686018999,9.0,0.0354218294966833,,DDD_2013B_2014B,full
+lr,Xie,Covariate-space,22.3985981069133,16.0,0.130781293527877,,DDD_2013B_2014B,full
+lr,Pulkstenis-Robinson,Covariate-space,621.254710192738,603.0,0.294738677999643,"split on categorical: num_of_prev_attempts, clicks_quiz, assess_submitted, assess_mean_days_late, gender, disability, highest_education, imd_band, age_band",DDD_2013B_2014B,full
+lr,Cubic-LR,Calibration,4.69050952244083,2.0,0.0958227870904451,eta^2 and eta^3 added to a logit fit on eta,DDD_2013B_2014B,full
+lr,Ensemble.Vote(3DEF),Ensemble,,,,Cauchy combination of the directed tests,DDD_2013B_2014B,full
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,,Cauchy combination of the directed tests,DDD_2013B_2014B,full
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.0388,lambda=10.99 (theory scale); G=10; B=999,DDD_2013B_2014B,full
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,12.0651071141419,,0.088,lambda=10.99 (theory scale); G=10; B=999,DDD_2013B_2014B,full
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.0079,lambda=10.99 (theory scale); G=10; B=999,DDD_2013B_2014B,full
+ridge,EDGE (shrinkage-corrected),Shrinkage,5.18526109580494,,0.031,lambda=10.99 (theory scale); G=10; B=999,DDD_2013B_2014B,full
+lr,Pearson,Global,1583.79590241428,1621.0,0.741100913055987,"sparse form; comparison only, not counted",DDD_2013J_2014J,full
+lr,Deviance,Global,1663.12865656655,1621.0,0.228055434986817,"sparse form; comparison only, not counted",DDD_2013J_2014J,full
+lr,Osius-Rojek,Standardized,-1.05078920186755,,0.293355416257111,"normal deviate, two-sided",DDD_2013J_2014J,full
+lr,McCullagh,Standardized,,,,Not run: singular information matrix,DDD_2013J_2014J,full
+lr,Copas-RSS,Standardized,,,,Not run: singular information matrix,DDD_2013J_2014J,full
+lr,Information-Matrix,Global,,,,Not run: singular auxiliary matrix,DDD_2013J_2014J,full
+lr,HL,Partition,10.5011911284469,8.0,0.231594375835377,,DDD_2013J_2014J,full
+lr,HL-largeN,Partition,10.5011911284469,8.0,0.232620040695661,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 3.90e-02,DDD_2013J_2014J,full
+lr,HL-equalwidth,Partition,7.32470212303433,8.0,0.502038976723275,,DDD_2013J_2014J,full
+lr,Pigeon-Heyse,Partition,10.6187979472985,9.0,0.30274559995574,,DDD_2013J_2014J,full
+lr,F-test,Partition,4.46044490504544,9.0,8.45516985947899e-06,"ANOVA F on deviance residuals; comparison only, not counted",DDD_2013J_2014J,full
+lr,EF,Partition,10.6858607860416,8.0,0.220141791702124,,DDD_2013J_2014J,full
+lr,EF-normal,Partition,,,,"error: Lapack routine dgesv: system is exactly singular: U[14,14] = 0",DDD_2013J_2014J,full
+lr,EDGE,Directed,,,,"error: Lapack routine dgesv: system is exactly singular: U[14,14] = 0",DDD_2013J_2014J,full
+lr,EDGE.G10,Directed,,,,"error: Lapack routine dgesv: system is exactly singular: U[14,14] = 0",DDD_2013J_2014J,full
+lr,DEF.poly2,Directed,,,,"error: Lapack routine dgesv: system is exactly singular: U[14,14] = 0",DDD_2013J_2014J,full
+lr,DEF.stukel,Directed,,,,"error: Lapack routine dgesv: system is exactly singular: U[14,14] = 0",DDD_2013J_2014J,full
+lr,DEF.sym,Directed,,,,"error: Lapack routine dgesv: system is exactly singular: U[14,14] = 0",DDD_2013J_2014J,full
+lr,Stukel,Directed,4.81947983910068,2.0,0.0898386568123456,,DDD_2013J_2014J,full
+lr,Tsiatis,Covariate-space,11.6139733951032,9.0,0.235956487564941,,DDD_2013J_2014J,full
+lr,Xie,Covariate-space,23.823659369854,16.0,0.09342734038225,,DDD_2013J_2014J,full
+lr,Pulkstenis-Robinson,Covariate-space,360.982561747995,509.0,0.999999878846712,"split on categorical: num_of_prev_attempts, clicks_quiz, assess_submitted, assess_mean_days_late, gender, disability, highest_education, imd_band, age_band",DDD_2013J_2014J,full
+lr,Cubic-LR,Calibration,5.03246778856442,2.0,0.0807631974530725,eta^2 and eta^3 added to a logit fit on eta,DDD_2013J_2014J,full
+lr,Ensemble.Vote(3DEF),Ensemble,,,,Cauchy combination of the directed tests,DDD_2013J_2014J,full
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,,Cauchy combination of the directed tests,DDD_2013J_2014J,full
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.12645,lambda=3.152 (theory scale); G=10; B=999,DDD_2013J_2014J,full
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,12.7401177994969,,0.092,lambda=3.152 (theory scale); G=10; B=999,DDD_2013J_2014J,full
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.08805,lambda=3.152 (theory scale); G=10; B=999,DDD_2013J_2014J,full
+ridge,EDGE (shrinkage-corrected),Shrinkage,4.75053895942694,,0.052,lambda=3.152 (theory scale); G=10; B=999,DDD_2013J_2014J,full
+lr,Pearson,Global,929.297771256569,906.0,0.288313264767048,"sparse form; comparison only, not counted",EEE_2013J_2014J,full
+lr,Deviance,Global,952.889686859051,906.0,0.135953564449093,"sparse form; comparison only, not counted",EEE_2013J_2014J,full
+lr,Osius-Rojek,Standardized,1.36406398004339,,0.172547430093091,"normal deviate, two-sided",EEE_2013J_2014J,full
+lr,McCullagh,Standardized,0.139673088499251,,0.444459145104682,"normal deviate, upper tail",EEE_2013J_2014J,full
+lr,Copas-RSS,Standardized,0.211108868045741,,0.832802320474069,"normal deviate, two-sided",EEE_2013J_2014J,full
+lr,Information-Matrix,Global,46.8894367043199,21.0,0.0009718296063417,,EEE_2013J_2014J,full
+lr,HL,Partition,18.0476443068361,8.0,0.0208721126716093,,EEE_2013J_2014J,full
+lr,HL-largeN,Partition,18.0476443068361,8.0,0.0209881230136804,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 1.04e-01,EEE_2013J_2014J,full
+lr,HL-equalwidth,Partition,8.38418420325802,8.0,0.396869291458213,,EEE_2013J_2014J,full
+lr,Pigeon-Heyse,Partition,17.8074991861048,9.0,0.0374737222400843,,EEE_2013J_2014J,full
+lr,F-test,Partition,4.13040814272596,9.0,3.12892607623906e-05,"ANOVA F on deviance residuals; comparison only, not counted",EEE_2013J_2014J,full
+lr,EF,Partition,18.0961609265597,8.0,0.0205169956389354,,EEE_2013J_2014J,full
+lr,EF-normal,Partition,-0.394469896494372,,0.653382925861455,"normal reference, many groups (G = 38)",EEE_2013J_2014J,full
+lr,EDGE,Directed,3.07824564681242,1.81576471233243,0.0691375935431163,"S/c ~ chi-square(df), Satterthwaite; G = 38 (auto)",EEE_2013J_2014J,full
+lr,EDGE.G10,Directed,4.0561627980509,1.98435803775928,0.0588173056737506,"S/c ~ chi-square(df), Satterthwaite",EEE_2013J_2014J,full
+lr,DEF.poly2,Directed,2.82900673066423,1.14429806768438,0.0230652340218394,"S/c ~ chi-square(df), Satterthwaite",EEE_2013J_2014J,full
+lr,DEF.stukel,Directed,2.90805898380294,1.85097649673077,0.0901096795385239,"S/c ~ chi-square(df), Satterthwaite",EEE_2013J_2014J,full
+lr,DEF.sym,Directed,0.0022429189649229,1.0,0.915451981656621,"S/c ~ chi-square(df), Satterthwaite",EEE_2013J_2014J,full
+lr,Stukel,Directed,9.42686260643315,2.0,0.0089739324099869,,EEE_2013J_2014J,full
+lr,Tsiatis,Covariate-space,14.3643056138311,9.0,0.109943507536103,,EEE_2013J_2014J,full
+lr,Xie,Covariate-space,19.9651970273586,14.0,0.131242503891649,,EEE_2013J_2014J,full
+lr,Pulkstenis-Robinson,Covariate-space,89.6935381913153,95.0,0.634488160161983,"split on categorical: gender, disability, highest_education, imd_band, age_band",EEE_2013J_2014J,full
+lr,Cubic-LR,Calibration,3.90221909578963,2.0,0.142116299234075,eta^2 and eta^3 added to a logit fit on eta,EEE_2013J_2014J,full
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.0420742468248692,Cauchy combination of the directed tests,EEE_2013J_2014J,full
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.0333337993404659,Cauchy combination of the directed tests,EEE_2013J_2014J,full
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.5425,lambda=89.98 (theory scale); G=10; B=999,EEE_2013J_2014J,full
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,3.84004190356226,,0.805,lambda=89.98 (theory scale); G=10; B=999,EEE_2013J_2014J,full
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.05425,lambda=89.98 (theory scale); G=10; B=999,EEE_2013J_2014J,full
+ridge,EDGE (shrinkage-corrected),Shrinkage,1.57560690963658,,0.259,lambda=89.98 (theory scale); G=10; B=999,EEE_2013J_2014J,full
+lr,Pearson,Global,1392.13815376334,1425.0,0.728354149482244,"sparse form; comparison only, not counted",FFF_2013B_2014B,full
+lr,Pearson (grouped),Global,1392.13815376334,1424.0,0.722080240829769,grouped to 1449 covariate patterns,FFF_2013B_2014B,full
+lr,Deviance,Global,1569.39496947984,1425.0,0.0042586997202369,"sparse form; comparison only, not counted",FFF_2013B_2014B,full
+lr,Deviance (grouped),Global,1569.39496947984,1424.0,0.0040332134490519,grouped to 1449 covariate patterns,FFF_2013B_2014B,full
+lr,Osius-Rojek,Standardized,-0.94965761019232,,0.342286255373964,grouped to 1449 covariate patterns,FFF_2013B_2014B,full
+lr,McCullagh,Standardized,-1.70953280592219,,0.956323849858556,"normal deviate, upper tail",FFF_2013B_2014B,full
+lr,McCullagh (grouped),Standardized,-1.68189608292151,,0.953705503803502,grouped to 1449 covariate patterns,FFF_2013B_2014B,full
+lr,Copas-RSS,Standardized,1.91409210263619,,0.0556083884326512,"normal deviate, two-sided",FFF_2013B_2014B,full
+lr,Information-Matrix,Global,33.6966854033482,25.0,0.114551808138736,,FFF_2013B_2014B,full
+lr,HL,Partition,15.8596689207379,8.0,0.0444332929180985,,FFF_2013B_2014B,full
+lr,HL-largeN,Partition,15.8596689207379,8.0,0.0447564965716135,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 7.36e-02,FFF_2013B_2014B,full
+lr,HL-equalwidth,Partition,16.3179718445731,8.0,0.0380485925334269,,FFF_2013B_2014B,full
+lr,Pigeon-Heyse,Partition,15.9384225224005,9.0,0.0681786747477003,,FFF_2013B_2014B,full
+lr,F-test,Partition,4.28261261317966,9.0,1.65272452736133e-05,"ANOVA F on deviance residuals; comparison only, not counted",FFF_2013B_2014B,full
+lr,EF,Partition,16.0070640923132,8.0,0.0422791146570424,,FFF_2013B_2014B,full
+lr,EF-normal,Partition,-0.013443945823585,,0.505363196846888,"normal reference, many groups (G = 58)",FFF_2013B_2014B,full
+lr,EDGE,Directed,2.59281919969016,1.88280005097432,0.18339392571985,"S/c ~ chi-square(df), Satterthwaite; G = 58 (auto)",FFF_2013B_2014B,full
+lr,EDGE.G10,Directed,2.22256460307724,1.94801672214844,0.239783736371276,"S/c ~ chi-square(df), Satterthwaite",FFF_2013B_2014B,full
+lr,DEF.poly2,Directed,0.008505129222171,1.11809493571169,0.929913148215106,"S/c ~ chi-square(df), Satterthwaite",FFF_2013B_2014B,full
+lr,DEF.stukel,Directed,2.20089695003703,1.8667848408857,0.21008889089588,"S/c ~ chi-square(df), Satterthwaite",FFF_2013B_2014B,full
+lr,DEF.sym,Directed,0.39004032960922,1.0,0.196851255260545,"S/c ~ chi-square(df), Satterthwaite",FFF_2013B_2014B,full
+lr,Stukel,Directed,3.25290257625266,2.0,0.196626106899103,,FFF_2013B_2014B,full
+lr,Tsiatis,Covariate-space,4.15288646768467,9.0,0.901064641289429,,FFF_2013B_2014B,full
+lr,Xie,Covariate-space,17.3566734108331,16.0,0.36288775313153,,FFF_2013B_2014B,full
+lr,Pulkstenis-Robinson,Covariate-space,252.546189260114,349.0,0.999971962056977,"split on categorical: num_of_prev_attempts, assess_submitted, gender, disability, highest_education, imd_band, age_band",FFF_2013B_2014B,full
+lr,Cubic-LR,Calibration,4.35917826369041,2.0,0.113087985348286,eta^2 and eta^3 added to a logit fit on eta,FFF_2013B_2014B,full
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.695339856914882,Cauchy combination of the directed tests,FFF_2013B_2014B,full
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.20375222794429,Cauchy combination of the directed tests,FFF_2013B_2014B,full
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.22745,lambda=11.05 (theory scale); G=10; B=999,FFF_2013B_2014B,full
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,10.1851762702335,,0.17,lambda=11.05 (theory scale); G=10; B=999,FFF_2013B_2014B,full
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.08405,lambda=11.05 (theory scale); G=10; B=999,FFF_2013B_2014B,full
+ridge,EDGE (shrinkage-corrected),Shrinkage,3.56456967586029,,0.085,lambda=11.05 (theory scale); G=10; B=999,FFF_2013B_2014B,full
+lr,Pearson,Global,1958.93985136763,1957.0,0.483388010798345,"sparse form; comparison only, not counted",FFF_2013J_2014J,full
+lr,Deviance,Global,2119.53738697342,1957.0,0.0055429979931257,"sparse form; comparison only, not counted",FFF_2013J_2014J,full
+lr,Osius-Rojek,Standardized,0.0441176748798131,,0.964810603984637,"normal deviate, two-sided",FFF_2013J_2014J,full
+lr,McCullagh,Standardized,-0.510001931806251,,0.694974945798188,"normal deviate, upper tail",FFF_2013J_2014J,full
+lr,Copas-RSS,Standardized,-0.152356027646136,,0.878906136976441,"normal deviate, two-sided",FFF_2013J_2014J,full
+lr,Information-Matrix,Global,33.3128478008062,25.0,0.12343042396236,,FFF_2013J_2014J,full
+lr,HL,Partition,8.012066706705,8.0,0.432292293183165,,FFF_2013J_2014J,full
+lr,HL-largeN,Partition,8.012066706705,8.0,0.433744690572071,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 2.47e-03,FFF_2013J_2014J,full
+lr,HL-equalwidth,Partition,9.88984908445085,8.0,0.272842380627231,,FFF_2013J_2014J,full
+lr,Pigeon-Heyse,Partition,8.7491220382852,9.0,0.460747426955733,,FFF_2013J_2014J,full
+lr,F-test,Partition,4.63676085716372,9.0,4.28553878963934e-06,"ANOVA F on deviance residuals; comparison only, not counted",FFF_2013J_2014J,full
+lr,EF,Partition,8.17346810682634,8.0,0.416711433631796,,FFF_2013J_2014J,full
+lr,EF-normal,Partition,-0.426286800313358,,0.665050562522471,"normal reference, many groups (G = 80)",FFF_2013J_2014J,full
+lr,EDGE,Directed,0.98886869307755,1.89844692101216,0.517341098727003,"S/c ~ chi-square(df), Satterthwaite; G = 80 (auto)",FFF_2013J_2014J,full
+lr,EDGE.G10,Directed,0.921407208478749,1.99155495231958,0.566145834366706,"S/c ~ chi-square(df), Satterthwaite",FFF_2013J_2014J,full
+lr,DEF.poly2,Directed,0.894318848293927,1.12124905293483,0.269327544475445,"S/c ~ chi-square(df), Satterthwaite",FFF_2013J_2014J,full
+lr,DEF.stukel,Directed,1.17615982295099,1.90935595001662,0.449012160662139,"S/c ~ chi-square(df), Satterthwaite",FFF_2013J_2014J,full
+lr,DEF.sym,Directed,0.286200004530807,1.0,0.291194775330325,"S/c ~ chi-square(df), Satterthwaite",FFF_2013J_2014J,full
+lr,Stukel,Directed,1.80480839018453,2.0,0.405593361036526,,FFF_2013J_2014J,full
+lr,Tsiatis,Covariate-space,10.9769130797083,9.0,0.277294750672961,,FFF_2013J_2014J,full
+lr,Xie,Covariate-space,17.1785261776531,16.0,0.374136714037206,,FFF_2013J_2014J,full
+lr,Pulkstenis-Robinson,Covariate-space,239.929149538686,363.0,0.999999896510126,"split on categorical: num_of_prev_attempts, assess_submitted, gender, disability, highest_education, imd_band, age_band",FFF_2013J_2014J,full
+lr,Cubic-LR,Calibration,1.15691043252218,2.0,0.560763956860286,eta^2 and eta^3 added to a logit fit on eta,FFF_2013J_2014J,full
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.41348243411171,Cauchy combination of the directed tests,FFF_2013J_2014J,full
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.414288001780868,Cauchy combination of the directed tests,FFF_2013J_2014J,full
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.2489,lambda=13.47 (theory scale); G=10; B=999,FFF_2013J_2014J,full
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,9.18817875588844,,0.277,lambda=13.47 (theory scale); G=10; B=999,FFF_2013J_2014J,full
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.41535,lambda=13.47 (theory scale); G=10; B=999,FFF_2013J_2014J,full
+ridge,EDGE (shrinkage-corrected),Shrinkage,0.73531623750611,,0.609,lambda=13.47 (theory scale); G=10; B=999,FFF_2013J_2014J,full
+lr,Pearson,Global,921.457643910171,905.0,0.344517781891729,"sparse form; comparison only, not counted",GGG_2013J_2014J,full
+lr,Pearson (grouped),Global,914.982684460394,899.0,0.348115204647371,grouped to 918 covariate patterns,GGG_2013J_2014J,full
+lr,Deviance,Global,1122.32412532664,905.0,9.4954480101629e-07,"sparse form; comparison only, not counted",GGG_2013J_2014J,full
+lr,Deviance (grouped),Global,1114.00635915992,899.0,1.12139933801279e-06,grouped to 918 covariate patterns,GGG_2013J_2014J,full
+lr,Osius-Rojek,Standardized,2.57132851455631,,0.0101309174779238,grouped to 918 covariate patterns,GGG_2013J_2014J,full
+lr,McCullagh,Standardized,-0.438313343838541,,0.669420422897383,"normal deviate, upper tail",GGG_2013J_2014J,full
+lr,McCullagh (grouped),Standardized,-0.455308186524,,0.675556231258283,grouped to 918 covariate patterns,GGG_2013J_2014J,full
+lr,Copas-RSS,Standardized,0.799610729890948,,0.423936368807263,"normal deviate, two-sided",GGG_2013J_2014J,full
+lr,Information-Matrix,Global,33.8017332257294,19.0,0.0193920275217984,,GGG_2013J_2014J,full
+lr,HL,Partition,5.53202469340153,8.0,0.699489402387816,,GGG_2013J_2014J,full
+lr,HL-largeN,Partition,5.53202469340153,8.0,0.700021181546478,H0: eps <= 2.74e-03 (n0 = 1e+06); eps_hat = 0.00e+00,GGG_2013J_2014J,full
+lr,HL-equalwidth,Partition,8.89746932597983,6.0,0.179426966146187,,GGG_2013J_2014J,full
+lr,Pigeon-Heyse,Partition,5.57590684675612,9.0,0.78149759634754,,GGG_2013J_2014J,full
+lr,F-test,Partition,1.04533405419592,9.0,0.401578444854643,"ANOVA F on deviance residuals; comparison only, not counted",GGG_2013J_2014J,full
+lr,EF,Partition,5.54796717246603,8.0,0.697720036351096,,GGG_2013J_2014J,full
+lr,EF-normal,Partition,-0.11096032314084,,0.544176095035719,"normal reference, many groups (G = 37)",GGG_2013J_2014J,full
+lr,EDGE,Directed,1.34981867615225,1.99094069981337,0.468971639693771,"S/c ~ chi-square(df), Satterthwaite; G = 37 (auto)",GGG_2013J_2014J,full
+lr,EDGE.G10,Directed,2.56976466690229,2.04890912084714,0.242364907562228,"S/c ~ chi-square(df), Satterthwaite",GGG_2013J_2014J,full
+lr,DEF.poly2,Directed,2.08853740584167,1.07488019638462,0.113374467763535,"S/c ~ chi-square(df), Satterthwaite",GGG_2013J_2014J,full
+lr,DEF.stukel,Directed,2.00486148463027,1.81425459022231,0.202790519504735,"S/c ~ chi-square(df), Satterthwaite",GGG_2013J_2014J,full
+lr,DEF.sym,Directed,0.106374917566797,1.0,0.422764625551522,"S/c ~ chi-square(df), Satterthwaite",GGG_2013J_2014J,full
+lr,Stukel,Directed,1.36620899694063,2.0,0.50504663952799,,GGG_2013J_2014J,full
+lr,Tsiatis,Covariate-space,7.01987369931874,9.0,0.635050171787387,,GGG_2013J_2014J,full
+lr,Xie,Covariate-space,23.8357870830506,13.0,0.0326745857671759,,GGG_2013J_2014J,full
+lr,Pulkstenis-Robinson,Covariate-space,93.5269102369561,103.0,0.737148790116017,"split on categorical: gender, disability, highest_education, imd_band, age_band",GGG_2013J_2014J,full
+lr,Cubic-LR,Calibration,1.47393978979744,2.0,0.478561813363839,eta^2 and eta^3 added to a logit fit on eta,GGG_2013J_2014J,full
+lr,Ensemble.Vote(3DEF),Ensemble,,,0.169571977847717,Cauchy combination of the directed tests,GGG_2013J_2014J,full
+lr,Ensemble.Univ(3DEF+EF),Ensemble,,,0.235841240657209,Cauchy combination of the directed tests,GGG_2013J_2014J,full
+ridge,"Hosmer-Lemeshow (routine, uncorrected)",Shrinkage,,,0.2247,lambda=120.2 (theory scale); G=10; B=999,GGG_2013J_2014J,full
+ridge,Hosmer-Lemeshow (shrinkage-corrected),Shrinkage,6.91634927957289,,0.496,lambda=120.2 (theory scale); G=10; B=999,GGG_2013J_2014J,full
+ridge,"EDGE (routine, uncorrected)",Shrinkage,,,0.02185,lambda=120.2 (theory scale); G=10; B=999,GGG_2013J_2014J,full
+ridge,EDGE (shrinkage-corrected),Shrinkage,3.25338627394889,,0.141,lambda=120.2 (theory scale); G=10; B=999,GGG_2013J_2014J,full

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite them as below."
+title: "Reproduction materials: When the System Says 70%, Do 70% Really Fail? Checking AI Foundation Models for Student-Risk Predictions"
+type: software
+version: 1.0.0
+date-released: 2026-11-04
+license: MIT
+repository-code: "https://github.com/ebrahimkhaled/student-risk-calibration-reproducibility"
+authors:
+  - family-names: Ebrahim
+    given-names: Ebrahim Khaled
+    affiliation: "Department of Statistics, Faculty of Business, Alexandria University, Alexandria, Egypt"
+    orcid: "https://orcid.org/0009-0006-7839-8778"
+keywords:
+  - calibration
+  - tabular foundation models
+  - learning analytics
+  - early-warning systems
+  - goodness-of-fit tests
+  - student risk
+  - TabPFN
+  - TabICL

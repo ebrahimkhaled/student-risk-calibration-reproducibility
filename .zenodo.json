@@ -1,0 +1,47 @@
+{
+  "title": "Reproduction materials: When the System Says 70%, Do 70% Really Fail? Checking AI Foundation Models for Student-Risk Predictions",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Ebrahim, Ebrahim Khaled",
+      "affiliation": "Department of Statistics, Faculty of Business, Alexandria University, Alexandria, Egypt",
+      "orcid": "0009-0006-7839-8778"
+    }
+  ],
+  "description": "<p>Code, derived data and results for the paper \"When the System Says 70%, Do 70% Really Fail? Checking AI Foundation Models for Student-Risk Predictions\" by Ebrahim Khaled Ebrahim, 16th International Conference on ICT in Our Lives, Alexandria University, December 2026.</p><p>The study trains logistic regression, ridge regression, LightGBM and the tabular foundation models TabPFN and TabICL on one year's students of nine Open University courses and scores the next year's 10,809 students at day 28. It compares how well the models rank students (AUC) with whether their percentages can be taken at face value (calibration), using the goodness-of-fit checks of the R package ebrahim.gof, and runs a controlled experiment showing that the routine check raises false alarms after ridge penalization while the corrected check does not.</p><p>The archive holds (1) every analysis step, from building the day-28 features to the figures; (2) the derived features and course pairs (no raw data; OULAD is available from its providers under CC BY 4.0); (3) every model's predictions for every new student and the results of every check; (4) the controlled experiment, one row per simulated cohort; (5) the log of design decisions made after looking at the data. Models are fitted with an earlier study's engine, used unchanged (doi:10.5281/zenodo.23737378). No model weights are included.</p>",
+  "keywords": [
+    "calibration",
+    "tabular foundation models",
+    "learning analytics",
+    "early-warning systems",
+    "goodness-of-fit tests",
+    "student risk",
+    "TabPFN",
+    "TabICL",
+    "ridge regression"
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "10.1038/sdata.2017.171",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23737378",
+      "relation": "requires",
+      "scheme": "doi",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.32614/CRAN.package.ebrahim.gof",
+      "relation": "requires",
+      "scheme": "doi",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "Code: MIT licence. Derived data and results: CC BY 4.0, as derived from the Open University Learning Analytics Dataset (CC BY 4.0). No raw data and no model weights are included."
+}
