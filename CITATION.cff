@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code or these results, please cite them as below."
 title: "Reproduction materials: When the System Says 70%, Do 70% of Students Really Fail? Checking AI Foundation Models for Student-Risk Predictions"
 type: software
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-11-04
 license: MIT
 repository-code: "https://github.com/ebrahimkhaled/student-risk-calibration-reproducibility"

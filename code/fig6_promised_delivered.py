@@ -51,9 +51,9 @@ for i, m in enumerate(fs.MODELS):
     ax.set_title(fs.LABEL[m] if m != "ridge" else "Ridge", fontsize=8.5, pad=3,
                  fontweight="bold" if m in fs.FOUNDATION else "normal")
     ax.text(5, -0.9, f"{k} of 100 failed", ha="center", va="top", fontsize=8)
-    ax.text(5, -2.2, f"(95% CI {100 * lo:.0f}\u2013{100 * hi:.0f})", ha="center", va="top", fontsize=7.5, color=fs.GREY)
+    ax.text(5, -2.2, f"(95% interval {100 * lo:.0f}\u2013{100 * hi:.0f})", ha="center", va="top", fontsize=7.5, color=fs.GREY)
 fig.text(0.02, 0.975, "a", fontweight="bold", fontsize=10, va="top")
-fig.text(0.05, 0.975, "100 students the system scored about 70% at risk. The line marks the promise: 70 should fail.",
+fig.text(0.05, 0.975, "Of every 100 students the system scored about 70% at risk, how many failed? The line marks the promise: 70.",
          fontsize=8.5, va="top")
 
 # ------------------------------------------------------------------ (b) cohort by cohort

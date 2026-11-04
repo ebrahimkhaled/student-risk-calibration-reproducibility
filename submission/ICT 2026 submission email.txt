@@ -1,0 +1,18 @@
+To: ictinourlives@gmail.com, ictinourlives@alexu.edu.eg
+Subject: Full paper submission, track "AI and Emerging Technologies in Academia": When the System Says 70%, Do 70% of Students Really Fail?
+
+Dear Organizing Committee of the 16th International Conference on ICT in Our Lives,
+
+Please find attached my full paper, "When the System Says 70%, Do 70% of Students Really Fail? Checking AI Foundation Models for Student-Risk Predictions", which I submit to the track "AI and Emerging Technologies in Academia".
+
+The paper compares two AI tabular foundation models (TabPFN and TabICL) with established methods for predicting which students are at risk of failing, using open data on more than 10,000 students. It shows that the models rank students almost equally well, but that their percentages often cannot be taken at face value, and it gives universities a short checklist and free tools for checking any risk score before relying on it.
+
+The paper is original, has not been published, and is not under consideration elsewhere. The code, derived data and results are openly available at https://github.com/ebrahimkhaled/student-risk-calibration-reproducibility.
+
+Thank you for your consideration. I look forward to hearing from you.
+
+Kind regards,
+Ebrahim Khaled Ebrahim
+Department of Statistics, Faculty of Business, Alexandria University, Egypt
+ebrahimkhaled@alexu.edu.eg
+ORCID: 0009-0006-7839-8778
